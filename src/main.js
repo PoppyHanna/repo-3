@@ -27,7 +27,7 @@
 //     //     Navigation,
 //     // },
 // });
-
+ 
 const parentElement = document.querySelector('.support.container');
 
 const perPage = 6;
