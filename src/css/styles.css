@@ -94,6 +94,10 @@
   align-items: center;
 }
 
+.swiper-wrapper {
+  flex-direction: column;
+}
+
 /* Використати у JS для гортання вверх */
 
 /* .btn-up {
