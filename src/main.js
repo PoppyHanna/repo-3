@@ -2,31 +2,31 @@
 
 
 // import Swiper JS
-import Swiper from 'swiper';
-// import Swiper from '/node_modules/swiper/swiper.js';
+// import Swiper from 'swiper';
+// // import Swiper from '/node_modules/swiper/swiper.js';
 
-// import Swiper styles
-// import { Navigation } from 'swiper';
-// // import Swiper and modules styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
+// // import Swiper styles
+// // import { Navigation } from 'swiper';
+// // // import Swiper and modules styles
+// // import 'swiper/css';
+// // import 'swiper/css/navigation';
 
-// import Swiper bundle with all modules installed
-import Swiper from 'swiper/bundle';
+// // import Swiper bundle with all modules installed
+// import Swiper from 'swiper/bundle';
 
-// import styles bundle
-import 'swiper/css/bundle';
+// // import styles bundle
+// import 'swiper/css/bundle';
 
-const swiper = new Swiper('.support.container', {
-    direction: 'vertical',
-    navigation: {
-        nextEl: '.swiper-button-next',
-    },
-    // slidesPerView: 'auto',
-    // modules: {
-    //     Navigation,
-    // },
-});
+// const swiper = new Swiper('.support.container', {
+//     direction: 'vertical',
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//     },
+//     // slidesPerView: 'auto',
+//     // modules: {
+//     //     Navigation,
+//     // },
+// });
 
 const parentElement = document.querySelector('.support.container');
 
