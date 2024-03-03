@@ -5,9 +5,16 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./photo.css');
 
-.container {
+.foto-s {
+  width: 32px;
+  height: 32px;
+}
+.img-s {
+  height: 32px;
+}
+
+.container-s {
   margin: 0 auto;
   border-radius: 16px;
   width: 356px;
@@ -20,7 +27,7 @@
   );
 }
 
-.title {
+.title-s {
   padding-top: 24px;
   padding-left: 40px;
   padding-bottom: 40px;
@@ -42,21 +49,7 @@
   justify-content: center;
 } */
 
-.list {
-  display: flex;
-  /* width: 143px; */
-  height: 32px;
-  gap: 16px;
-  filter: brightness(0) invert(1);
-  align-items: center;
-}
-
-/* .link {
-  filter: brightness(0) invert(1);
-  mix-blend-mode: luminosity;
-} */
-
-.scroll-button {
+.scroll-button-s {
   display: flex;
 
   /* fill: #4f2ee8; */
@@ -71,10 +64,10 @@
   margin: 24px auto;
 }
 
-.swiper {
+/* .swiper {
   width: 600px;
   height: 300px;
-}
+} */
 
 .swiper-container {
   width: 300px;
