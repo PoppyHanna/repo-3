@@ -1,11 +1,3 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-
 .foto-s {
   width: 32px;
   height: 32px;
@@ -30,7 +22,7 @@
 .title-s {
   padding-top: 24px;
   padding-left: 40px;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
   display: flex;
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
@@ -41,34 +33,35 @@
   gap: 14px;
 }
 
-/* .support-list {
-  padding-left: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-} */
-
-.scroll-button-s {
+.swiper-button-next {
   display: flex;
 
-  /* fill: #4f2ee8; */
+  fill: #4f2ee8;
   transition: transform 0.5s ease-in-out;
   /* padding: 8px 16px; */
   width: 32px;
   height: 32px;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   align-items: center;
   border: none;
   justify-content: center;
   margin: 24px auto;
 }
-
-/* .swiper {
-  width: 600px;
-  height: 300px;
-} */
-
+.scroll-button {
+  cursor: pointer;
+  width: 32px;
+  min-height: 32px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  transform: rotateX(0);
+}
 .swiper-container {
   width: 300px;
   /* height: 292px; */
@@ -76,23 +69,89 @@
   flex-direction: column;
   /* gap: 20px; */
   justify-content: center;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 .swiper-slide {
   display: flex;
   /* width: 143px; */
   height: 45px;
-  /* gap: 16px; */
+  gap: 16px;
   filter: brightness(0) invert(1);
   align-items: center;
 }
 
+/* .swiper-wrapper {
+  transition-duration: 0ms;
+  /* transform: translate3d(0px, -260px, 0px); */
+/* overflow-y: auto;
+  max-height: 255px;
+} */
+
 .swiper-wrapper {
   flex-direction: column;
+  padding-left: 50px;
+  transition-duration: 0ms;
+  overflow-y: auto;
+  /* Додайте цю властивість, щоб включити прокрутку */
+  max-height: 260px;
+  /* Додайте цю властивість, щоб обмежити висоту до 6 пунктів */
+  overflow-x: hidden;
+  /* Приховуємо горизонтальну прокрутку */
+  scrollbar-width: none;
+  /* Приховуємо стандартну смугу прокрутки у браузері Firefox */
+  -ms-overflow-style: none;
+  /* Приховуємо стандартну смугу прокрутки у браузері Edge */
 }
 
-/* Використати у JS для гортання вверх */
+/* .swiper-wrapper::-webkit-scrollbar {
+  display: none; 
+  
+} */
 
-/* .btn-up {
+.btn-up {
+  /* visibility: hidden; */
   transform: rotateX(180deg);
+}
+/* 
+.btn {
+  width: 30px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: 2px solid rgb(105, 127, 255);
+  box-shadow: 0px 0px 10px rgb(105, 127, 255);
+  position: relative;
+}
+
+.scroll {
+  width: 5px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgb(105, 127, 255);
+  box-shadow: 0px 0px 10px rgb(105, 127, 255);
+  animation: scroll_4013 2s linear infinite;
+  transform: translateY(40%);
+}
+
+.btn:after {
+  content: 'scroll';
+  position: absolute;
+  top: 140%;
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@keyframes scroll_4013 {
+  0% {
+    transform: translateY(40%);
+  }
+
+  50% {
+    transform: translateY(90%);
+  }
 } */
