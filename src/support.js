@@ -170,52 +170,52 @@ if (!parentElement) {
 const perPage = 9;
 let currentCharityIndex = 0;
 
- const charities = [
-  {
-    title: 'Save the Children',
-    url: 'https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis',
-    img: './img/save-the-children@2x.png',
-  },
-  {
-    title: 'Project HOPE',
-    url: 'https://www.projecthope.org/country/ukraine/',
-    img: './img/project-hope@2x.png',
-  },
-  {
-    title: 'UNITED24',
-    url: 'https://u24.gov.ua/uk',
-    img: './img/united24@2x.png',
-  },
-  {
-    title: 'International Medical Corps',
-    url: 'https://internationalmedicalcorps.org/country/ukraine/',
-    img: './img/international-medical-corps@2x.png',
-  },
-  {
-    title: 'Medicins Sans Frontieres',
-    url: 'https://www.msf.org/ukraine',
-    img: './img/medicins-sans-frontieres@2x.png',
-  },
-  {
-    title: 'RAZOM',
-    url: 'https://www.razomforukraine.org/',
-    img: './img/razom@2x.png',
-  },
-  {
-    title: 'Action against hunger',
-    url: 'https://www.actionagainsthunger.org/location/europe/ukraine/',
-    img: './img/action-against-hunger@2x.png',
-  },
-  {
-    title: 'World vision',
-    url: 'https://www.wvi.org/emergencies/ukraine',
-    img: './img/world-vision@2x.png',
-  },
-  {
-    title: 'Serhiy Prytula Charity Foundation',
-    url: 'https://prytulafoundation.org/en',
-    img: './img/serhiy-prytula-charity-foundation@2x.png',
-  },
+const charities = [
+    {
+        title: 'Save the Children',
+        url: 'https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis',
+        img: './img/save-the-children@2x.png',
+    },
+    {
+        title: 'Project HOPE',
+        url: 'https://www.projecthope.org/country/ukraine/',
+        img: './img/project-hope@2x.png',
+    },
+    {
+        title: 'UNITED24',
+        url: 'https://u24.gov.ua/uk',
+        img: './img/united24@2x.png',
+    },
+    {
+        title: 'International Medical Corps',
+        url: 'https://internationalmedicalcorps.org/country/ukraine/',
+        img: './img/international-medical-corps@2x.png',
+    },
+    {
+        title: 'Medicins Sans Frontieres',
+        url: 'https://www.msf.org/ukraine',
+        img: './img/medicins-sans-frontieres@2x.png',
+    },
+    {
+        title: 'RAZOM',
+        url: 'https://www.razomforukraine.org/',
+        img: './img/razom@2x.png',
+    },
+    {
+        title: 'Action against hunger',
+        url: 'https://www.actionagainsthunger.org/location/europe/ukraine/',
+        img: './img/action-against-hunger@2x.png',
+    },
+    {
+        title: 'World vision',
+        url: 'https://www.wvi.org/emergencies/ukraine',
+        img: './img/world-vision@2x.png',
+    },
+    {
+        title: 'Serhiy Prytula Charity Foundation',
+        url: 'https://prytulafoundation.org/en',
+        img: './img/serhiy-prytula-charity-foundation@2x.png',
+    },
 ];
 
 const swiperContainer = document.createElement('div');
@@ -242,7 +242,12 @@ function createListItem(charity) {
     img.alt = charity.title;
 
     link.appendChild(img);
-    swiperSlide.appendChild(document.createTextNode(`${charityIndex} `));
+    
+    const charityIndexSpan = document.createElement('span');
+    charityIndexSpan.classList.add('charity-index');
+    charityIndexSpan.textContent = charityIndex;
+
+    swiperSlide.appendChild(charityIndexSpan);
     swiperSlide.appendChild(link);
 
     swiperWrapper.appendChild(swiperSlide);
@@ -258,12 +263,12 @@ swiperContainer.appendChild(swiperWrapper);
 
 parentElement.appendChild(swiperContainer);
 
-const buttonContainer = document.createElement('div');
-buttonContainer.classList.add('button-con');
+const buttonDownContainer = document.createElement('div');
+buttonDownContainer.classList.add('button-con');
 
 const buttonDown = document.createElement('button');
 buttonDown.classList.add('btn-s');
-buttonDown.innerHTML = '<svg class="icon-s" width="24" height="24"><use href="./img/sprite.svg#icon-up" class="arrow-s"></use></svg>';
+buttonDown.innerHTML = '<svg class="icon-s" width="32" height="32"><use href="./img/sprite.svg#icon-up" class="arrow-s"></use></svg>';
 
-buttonContainer.appendChild(buttonDown);
-parentElement.appendChild(buttonContainer);
+buttonDownContainer.appendChild(buttonDown);
+parentElement.appendChild(buttonDownContainer);
