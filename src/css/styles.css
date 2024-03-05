@@ -137,12 +137,13 @@
   position: relative;
   background-color: #7961e3;
 }
-.arrow-s {
+/* .arrow-s {
   fill: black;
-}
+} */
 
 .icon-s {
-  transform: rotateX(180deg);
+  justify-content: center;
+  /* transform: rotateX(180deg); */
 }
 
 /* .scroll {
@@ -161,7 +162,7 @@
   justify-content: center;
 }
 
-@keyframes scroll_4013 {
+/* @keyframes scroll_4013 {
   0% {
     transform: translateY(40%);
   }
@@ -169,4 +170,4 @@
   50% {
     transform: translateY(90%);
   }
-}
+} */
