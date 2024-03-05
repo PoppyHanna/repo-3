@@ -91,13 +91,13 @@
   flex-direction: column;
   padding-left: 50px;
   transition-duration: 0ms;
-  overflow-y: auto;
+  overflow-y: clip;
   /* Додайте цю властивість, щоб включити прокрутку */
   max-height: 260px;
   /* Додайте цю властивість, щоб обмежити висоту до 6 пунктів */
   overflow-x: hidden;
   /* Приховуємо горизонтальну прокрутку */
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
   /* Приховуємо стандартну смугу прокрутки у браузері Firefox */
   -ms-overflow-style: none;
   /* Приховуємо стандартну смугу прокрутки у браузері Edge */
