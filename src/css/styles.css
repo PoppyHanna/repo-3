@@ -1,22 +1,38 @@
-.foto-s {
-  width: 32px;
-  height: 32px;
-}
-.img-s {
-  height: 32px;
-}
-
+/* Mobile 375px */
 .container-s {
-  margin: 0 auto;
+  margin: 40px 20px;
   border-radius: 16px;
-  width: 356px;
-  height: 474px;
+  width: 335px;
+  height: 460px;
   box-shadow: 0 10px 10px 0 rgba(245, 245, 247, 0.1);
   background: radial-gradient(
     189.32% 190.93% at 59.76% -23.42%,
     rgb(79, 46, 232) 18.02733987569809%,
     rgb(255, 255, 255) 100%
   );
+}
+/* Tablet */
+@media only screen and (min-width: 768px) {
+  .container-s {
+    width: 335px;
+    height: 474px;
+    margin-top: 40px;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-bottom: 98px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1440px) {
+  .container-s {
+    width: 356px;
+    height: 474px;
+    margin-top: 86px;
+    margin-right: 40px;
+    margin-left: 24px;
+    margin-bottom: 158px;
+  }
 }
 
 .title-s {
@@ -27,13 +43,21 @@
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: -0.04em;
   color: #fff;
-  gap: 14px;
+  gap: 12px;
 }
 
-.swiper-button-next {
+/* .foto-s {
+  width: 32px;
+  height: 32px;
+} */
+.img-s {
+  height: 32px;
+}
+
+/* .swiper-button-next {
   display: flex;
 
   fill: #4f2ee8;
@@ -46,8 +70,8 @@
   border: none;
   justify-content: center;
   margin: 24px auto;
-}
-.scroll-button {
+} */
+/* .scroll-button {
   cursor: pointer;
   width: 32px;
   min-height: 32px;
@@ -61,7 +85,7 @@
   transition: transform 0.5s ease-in-out;
   display: flex;
   transform: rotateX(0);
-}
+} */
 .swiper-container {
   width: 300px;
   height: 292px;
@@ -125,61 +149,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
-/*------ Settings ------*/
-.container-btn {
-  --color: #4f2ee8;
-  --size: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  font-size: var(--size);
-  user-select: none;
+.chevron-down {
   fill: #4f2ee8;
 }
 
-.container-btn .chevron-down {
-  position: absolute;
-  animation: keyframes-return 0.5s;
-}
-
-/* ------ On check event ------ */
-.container-btn input:checked ~ .chevron-down {
-  animation: keyframes-rotate 0.5s;
-  transform: rotate(180deg);
-}
-
-/* ------ Hide the default checkbox ------ */
-.container-btn input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* ------ Animation ------ */
-@keyframes keyframes-rotate {
+/* @keyframes keyframes-rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     opacity: 0;
   }
 
   100% {
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
   }
 }
 
 @keyframes keyframes-return {
   0% {
-    transform: rotate(-180deg);
+    transform: rotate(0deg);
     opacity: 0;
   }
 
   100% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
-}
+} */
+
+/* .container-btn .chevron-down {
+  position: absolute;
+  animation: keyframes-rotate 0.5s;}
+  /* Змінено початкове значення анімації */

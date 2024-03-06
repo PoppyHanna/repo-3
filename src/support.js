@@ -134,9 +134,9 @@ checkboxInput.addEventListener('change', () => {
     const button = document.querySelector('.chevron-down');
     
     if (checkboxInput.checked) {
-        button.style.transform = 'rotate(180deg)';
-    } else {
         button.style.transform = '';
+    } else {
+        button.style.transform = 'rotate(-180deg)';
     }
   
     const scrollDirection = wrapper.scrollTop <= 0 ? 'down' : 'up';
