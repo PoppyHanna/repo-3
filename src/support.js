@@ -136,7 +136,7 @@ checkboxInput.addEventListener('change', () => {
     if (checkboxInput.checked) {
         button.style.transform = '';
     } else {
-        button.style.transform = 'rotate(-180deg)';
+      button.style.transform = 'rotate(-180deg)';
     }
   
     const scrollDirection = wrapper.scrollTop <= 0 ? 'down' : 'up';
